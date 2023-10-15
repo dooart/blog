@@ -13,6 +13,6 @@ I decided to try a novel framework called [Fresh](https://fresh.deno.dev/) for t
 
 The good news is I still found a way to sneak in some technology I hadn't used it in this project. This seemed to be the perfect opportunity to try out a key-value store such as Redis. I chose [Upstash](https://upstash.com) for the job, a company providing durable storage with Redis for serverless applications. And I must say it was a _breeze_ to integrate, somehow even easier than Mongo Atlas.
 
-You can find the app running at https://s.dooart.art. Here's [the code](https://github.com/dooart/url-shortener).
+You can find the app running at https://s.dooart.dev. Here's [the code](https://github.com/dooart/url-shortener).
 
 A final note: it is kind of cool to have my own URL shortening service, but what is even cooler is being able to go from `git init` to production in just a few hours. Software development for the web has come a long way!

@@ -5,7 +5,7 @@ import Link from "next/link";
 import LoadingProgress from "./loading-progress";
 import useLoading from "../hooks/useLoading";
 
-export const siteTitle = "dooart.art";
+export const siteTitle = "dooart.dev";
 
 export default function Layout({ children, meta = {} }) {
   const isLoading = useLoading();
