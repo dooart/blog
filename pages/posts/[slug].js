@@ -80,6 +80,7 @@ export async function getStaticProps({ params }) {
     "content",
     "ogImage",
   ]);
+
   const content = await markdownToHtml(post.content || "");
 
   return {
