@@ -5,10 +5,10 @@ export default function Iframe({ src, title }) {
       scrolling="no"
       title={title}
       src={src}
-      frameborder="no"
+      frameBorder="no"
       loading="lazy"
       allowtransparency="true"
-      allowfullscreen="true"
+      allowFullScreen
     ></iframe>
   );
 }

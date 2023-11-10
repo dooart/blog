@@ -1,0 +1,18 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.addMissingImports": true,
+    "source.organizeImports": true
+  },
+  "search.exclude": {
+    "**/.next": true,
+    "build": true
+  },
+  "files.exclude": {
+    "**/.next": true,
+    "build": true
+  },
+  "editor.formatOnSave": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "prettier.printWidth": 120,
+  "typescript.preferences.autoImportFileExcludePatterns": ["@radix-ui/*"]
+}

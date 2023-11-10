@@ -1,12 +1,11 @@
 import ErrorPage from "next/error";
 import Image from "next/image";
 import { useRouter } from "next/router";
-
-import Layout from "../../components/layout";
 import DateFormatter from "../../components/date-formatter";
 import Iframe from "../../components/iframe";
+import Layout from "../../components/layout";
+import { getAllPosts, getPostBySlug } from "../../lib/api";
 import markdownToHtml from "../../lib/markdown";
-import { getPostBySlug, getAllPosts } from "../../lib/api";
 
 export default function Post({ post }) {
   const router = useRouter();
@@ -58,17 +57,13 @@ function PostHeader({ title, image, date, alternativeCover }) {
 }
 
 function PostTitle({ children }) {
-  return (
-    <h1 className="text-3xl md:text-5xl font-mono font-bold tracking-tighter mb-2">
-      {children}
-    </h1>
-  );
+  return <h1 className="text-3xl md:text-5xl font-mono font-bold tracking-tighter mb-2">{children}</h1>;
 }
 
 function PostBody({ content }) {
   return (
     <div className="max-w-2xl mx-auto">
-      <div className="markdown" dangerouslySetInnerHTML={{ __html: content }} />
+      <div className="markdown prose lg:prose-xl" dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );
 }

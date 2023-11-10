@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.markdown {
+/* .markdown {
   @apply text-lg leading-relaxed;
 }
 
@@ -26,4 +26,4 @@
 
 .markdown a {
   @apply underline;
-}
+} */
