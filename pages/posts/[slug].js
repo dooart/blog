@@ -26,6 +26,7 @@ export default function Post({ post }) {
               title={post.title}
               image={post.image}
               date={post.date}
+              summary={post.summary}
               alternativeCover={post.alternativeCover}
             />
             <PostBody content={post.content} />
@@ -36,7 +37,7 @@ export default function Post({ post }) {
   );
 }
 
-function PostHeader({ title, image, date, alternativeCover }) {
+function PostHeader({ title, summary, image, date, alternativeCover }) {
   return (
     <>
       <div className="flex justify-center">
@@ -50,6 +51,7 @@ function PostHeader({ title, image, date, alternativeCover }) {
       </div>
       <div className="max-w-2xl mx-auto mt-2 py-2 md:py-8">
         <PostTitle>{title}</PostTitle>
+        <PostSummary>{summary}</PostSummary>
         <DateFormatter dateString={date} />
       </div>
     </>
@@ -58,6 +60,10 @@ function PostHeader({ title, image, date, alternativeCover }) {
 
 function PostTitle({ children }) {
   return <h1 className="text-3xl md:text-5xl font-mono font-bold tracking-tighter mb-2">{children}</h1>;
+}
+
+function PostSummary({ children }) {
+  return <p className="text-lg md:text-xl tracking-tighter mb-2">{children}</p>;
 }
 
 function PostBody({ content }) {
