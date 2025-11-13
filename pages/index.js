@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import PostPreview from "../components/post-preview";
+import NewsletterForm from "../components/newsletter-form";
 import { getAllPosts } from "/lib/api";
 
 export default function Index({ allPosts }) {
@@ -20,6 +21,10 @@ export default function Index({ allPosts }) {
             </div>
           ))}
         </div>
+        <NewsletterForm
+          showInline={false}
+          description="behind-the-scenes chaos from coding experiments. see what breaks before it works."
+        />
       </section>
     </Layout>
   );

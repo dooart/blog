@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import DateFormatter from "../../components/date-formatter";
 import Iframe from "../../components/iframe";
 import Layout from "../../components/layout";
+import NewsletterForm from "../../components/newsletter-form";
 import { getAllPosts, getPostBySlug } from "../../lib/api";
 import markdownToHtml from "../../lib/markdown";
 
@@ -30,6 +31,7 @@ export default function Post({ post }) {
               alternativeCover={post.alternativeCover}
             />
             <PostBody content={post.content} />
+            <NewsletterForm showInline={true} />
           </article>
         </Layout>
       )}

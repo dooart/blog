@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import LoadingProgress from "./loading-progress";
 import useLoading from "../hooks/useLoading";
@@ -40,6 +41,9 @@ function LayoutHead({ meta }) {
 }
 
 function LayoutHeader() {
+  const router = useRouter();
+  const isNewsletterPage = router.pathname === "/newsletter";
+
   return (
     <header className="">
       <h1 className="text-4xl font-mono font-bold text-center mt-8 mb-3">
@@ -47,7 +51,7 @@ function LayoutHeader() {
           <a className="cursor-pointer hover:underline">dooart</a>
         </Link>
       </h1>
-      <div className="w-32 h-6 flex justify-between mx-auto mb-9">
+      <div className="w-32 h-6 flex justify-between mx-auto mb-4">
         <a href="https://github.com/dooart" target="_blank">
           <Image src="/images/social/github.svg" width={24} height={24} />
         </a>
@@ -61,6 +65,16 @@ function LayoutHeader() {
           <Image src="/images/social/linkedin.svg" width={24} height={24} />
         </a>
       </div>
+      {!isNewsletterPage && (
+        <div className="text-center mb-9">
+          <Link href="/newsletter" passHref>
+            <a className="text-sm font-mono hover:underline text-zinc-700">
+              lab notes from failed experiments →
+            </a>
+          </Link>
+        </div>
+      )}
+      {isNewsletterPage && <div className="mb-9" />}
     </header>
   );
 }
