@@ -24,7 +24,7 @@ When you type "be sad" to an AI, you're asking it nicely. When you use control v
 
 Control vectors are directions in latent space that correspond to specific changes in behavior. Imagine the AI's thoughts as a vast landscape with 4096 dimensions. A control vector is like a compass heading that says "sadness is this way." Apply that vector, and you're not asking the AI to be sad - you're physically moving its consciousness toward the Valley of Sadness.
 
-The [repeng library](https://github.com/vgel/repeng) makes this possible. You train these vectors by showing the model thousands of examples of opposite emotions, and it learns the mathematical direction between them.
+The [repeng library](https://github.com/vgel/repeng) makes this possible. You train these vectors by showing the model thousands of examples of opposite emotions, and it learns the mathematical direction between them. (Check out [this article by the author of repeng](https://vgel.me/posts/representation-engineering/) for a deep dive into control vectors and representation engineering.)
 
 ## the problem with 4096 dimensions
 
