@@ -22,19 +22,19 @@ My pancake burned. I didn't care. I was already sketching.
 
 When you type "be sad" to an AI, you're asking it nicely. When you use control vectors, it's more like brain surgery.
 
-Control vectors are directions in latent space that correspond to specific changes in behavior. Imagine the AI's thoughts as a vast landscape with 768 dimensions. A control vector is like a compass heading that says "sadness is this way." Apply that vector, and you're not asking the AI to be sad - you're physically moving its consciousness toward the Valley of Sadness.
+Control vectors are directions in latent space that correspond to specific changes in behavior. Imagine the AI's thoughts as a vast landscape with 4096 dimensions. A control vector is like a compass heading that says "sadness is this way." Apply that vector, and you're not asking the AI to be sad - you're physically moving its consciousness toward the Valley of Sadness.
 
 The [repeng library](https://github.com/vgel/repeng) makes this possible. You train these vectors by showing the model thousands of examples of opposite emotions, and it learns the mathematical direction between them.
 
-## the problem with 768 dimensions
+## the problem with 4096 dimensions
 
 Your brain can't go there, but your mouse can.
 
 That's the whole problem and the whole solution wrapped up in nine words. We evolved to navigate 3D space. We're really, really good at it. We can catch a ball, parallel park (some of us), and reach for a coffee mug without looking.
 
-But 768 dimensions isn't exactly a space we can navigate. It's not even a space we can imagine. It's pure math, alien geometry that our brains just go like "nope".
+But 4096 dimensions isn't exactly a space we can navigate. It's not even a space we can imagine. It's pure math, alien geometry that our brains just go like "nope".
 
-So this project is meant to act like a bridge. A sphere you can drag in normal 3D space, where every position maps to a location in that alien 768-dimensional space. Your mouse becomes a interdimensional steering wheel.
+So this project is meant to act like a bridge. A sphere you can drag in normal 3D space, where every position maps to a location in that alien 4096-dimensional space. Your mouse becomes a interdimensional steering wheel.
 
 ## building the sphere
 
